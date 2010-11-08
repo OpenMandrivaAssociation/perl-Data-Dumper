@@ -1,9 +1,9 @@
 %define upstream_name    Data-Dumper
-%define upstream_version 2.126
+%define upstream_version 2.128
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 
 Summary:    Convert data structure into perl code
 License:    GPL+ or Artistic
