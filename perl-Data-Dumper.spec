@@ -1,18 +1,17 @@
 %define upstream_name    Data-Dumper
-%define upstream_version 2.131
+%define upstream_version 2.145
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:    Convert data structure into perl code
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Data/Data-Dumper-%{upstream_version}.tar.gz
 
 BuildRequires: perl-devel
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Given a list of scalars or reference variables, writes out their contents
@@ -42,14 +41,11 @@ below.
 %make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
 %clean
-rm -rf %buildroot
 
 %files
-%defattr(-,root,root)
 %doc Changes
 %perl_vendorlib/*
 
@@ -92,3 +88,4 @@ rm -rf %buildroot
 
 * Sun Dec 06 2009 cpan2dist 2.125-1mdv
 - initial mdv release, generated with cpan2dist
+
