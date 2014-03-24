@@ -1,5 +1,5 @@
 %define upstream_name    Data-Dumper
-%define upstream_version 2.145
+%define upstream_version 2.151
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:    Convert data structure into perl code
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Data/Data-Dumper-%{upstream_version}.tar.gz
+Source0:    http://www.cpan.org/modules/by-module/Data/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl-devel
 
@@ -88,4 +88,5 @@ below.
 
 * Sun Dec 06 2009 cpan2dist 2.125-1mdv
 - initial mdv release, generated with cpan2dist
+
 
