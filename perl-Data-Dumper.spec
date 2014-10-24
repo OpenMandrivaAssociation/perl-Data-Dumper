@@ -1,11 +1,12 @@
 %define upstream_name    Data-Dumper
-%define upstream_version 2.151
+%define upstream_version 2.154
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Release:    1
 
 Summary:    Convert data structure into perl code
+
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
@@ -47,46 +48,8 @@ below.
 
 %files
 %doc Changes
-%perl_vendorlib/*
+%{perl_vendorlib}/*
 
 
-
-
-%changelog
-* Wed Jan 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 2.131.0-2
-+ Revision: 768358
-- svn commit -m mass rebuild of perl extension against perl 5.14.2
-
-* Tue May 31 2011 Guillaume Rousse <guillomovitch@mandriva.org> 2.131.0-1
-+ Revision: 682115
-- update to new version 2.131
-
-* Sun May 29 2011 Funda Wang <fwang@mandriva.org> 2.128.0-2
-+ Revision: 681372
-- mass rebuild
-
-* Mon Nov 08 2010 Guillaume Rousse <guillomovitch@mandriva.org> 2.128.0-1mdv2011.0
-+ Revision: 595095
-- update to new version 2.128
-
-* Wed Jul 28 2010 Jérôme Quelin <jquelin@mandriva.org> 2.126.0-3mdv2011.0
-+ Revision: 562420
-- rebuild
-
-* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 2.126.0-2mdv2011.0
-+ Revision: 555743
-- rebuild for perl 5.12
-
-* Sun Apr 18 2010 Jérôme Quelin <jquelin@mandriva.org> 2.126.0-1mdv2010.1
-+ Revision: 536126
-- update to 2.126
-
-* Sun Dec 06 2009 Jérôme Quelin <jquelin@mandriva.org> 2.125.0-1mdv2010.1
-+ Revision: 474079
-- import perl-Data-Dumper
-
-
-* Sun Dec 06 2009 cpan2dist 2.125-1mdv
-- initial mdv release, generated with cpan2dist
 
 
