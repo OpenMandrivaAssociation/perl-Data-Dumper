@@ -46,7 +46,8 @@ below.
 
 %files
 %doc Changes
-#{perl_vendorlib}/*
+%{_libdir}/perl5/vendor_perl/Data/Dumper.pm
+%{_libdir}/perl5/vendor_perl/auto/Data/Dumper/Dumper.so
 
 
 
