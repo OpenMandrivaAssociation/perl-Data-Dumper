@@ -1,3 +1,4 @@
+%define _empty_manifest_terminate_build 0
 %define upstream_name    Data-Dumper
 %define upstream_version 2.183
 
