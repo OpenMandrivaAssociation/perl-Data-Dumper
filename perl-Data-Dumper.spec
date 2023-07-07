@@ -48,6 +48,7 @@ below.
 %doc Changes
 %{_libdir}/perl5/vendor_perl/Data/Dumper.pm
 %{_libdir}/perl5/vendor_perl/auto/Data/Dumper/Dumper.so
+%{_mandir}/man3/Data::Dumper.3pm.*
 
 
 
