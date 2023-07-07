@@ -45,7 +45,7 @@ below.
 
 %files
 %doc Changes
-%{perl_vendorlib}/*
+#{perl_vendorlib}/*
 
 
 
